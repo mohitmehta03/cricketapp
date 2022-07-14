@@ -118,5 +118,22 @@ public class match implements inning
         System.out.println(chased);
         return chased;
     }
+    public void summary()
+    {
+        System.out.println("team A score :" +(target-1));
+        System.out.println("team b score :" +chased);
+    }
+   public void result()
+    {
+        
+        if(chased<target)
+        {
+            System.out.println("Team played first inning won the game by "+(target-chased));
+        }
+        else
+        {
+            System.out.println("Team played second inning won the game ");
+        }
+    }
 }
 
